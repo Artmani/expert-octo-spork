@@ -260,6 +260,14 @@ body {
         display: none;
     }
 
+    .header__divider-2 {
+        display: none;
+    }
+
+    .hidden {
+        display: none;
+    }
+
     .services__title-header {
         display: flex;
         flex-direction: row;
@@ -274,14 +282,6 @@ body {
     .services__content {
         padding-left: 33px;
         padding-right: 33px
-    }
-
-    .header__divider-2 {
-        display: none;
-    }
-
-    .hidden {
-        display: none;
     }
 
     .header__icon-text {
