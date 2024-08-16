@@ -175,6 +175,7 @@ body {
 .services__title-header {
     display: none;
 }
+
 .header__icon-text {
     display: none;
 }
@@ -230,6 +231,7 @@ body {
     .services__title-header {
         display: none;
     }
+
     .header__icon-text {
         display: none;
     }
@@ -281,17 +283,19 @@ body {
     .hidden {
         display: none;
     }
+
     .header__icon-text {
         margin-right: 10px;
         font-size: 16px;
         display: inline-block;
     }
+
     .header__icons .header__icon-text-li {
         display: flex;
         align-items: center;
     }
+
     .services__menu {
         display: block;
     }
-
 }
