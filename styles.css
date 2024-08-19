@@ -128,15 +128,19 @@ body {
 }
 
 .services__content {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 24px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .services__description {
     max-width: 100%;
     margin-bottom: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .services__link-column {
@@ -160,12 +164,18 @@ body {
     font-weight: 500;
 }
 
+
 .services__image {
     max-width: 100%;
+    text-align: center;
+    margin: 0;
+    border-radius: 0;
 }
 
 .services__image img {
     max-width: 100%;
+    height: auto;
+    border-radius: 0;
 }
 
 .servives__dscription-text-2-2 {
@@ -186,11 +196,11 @@ body {
         padding: 19px 24px;
     }
 
+
     .services__content {
-        display: flex;
         flex-direction: row;
-        justify-content: space-between;
         align-items: flex-start;
+        justify-content: space-between;
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -199,25 +209,25 @@ body {
         flex: 1;
         max-width: 60%;
         margin-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .services__link-column {
-        padding-top: 0;
-        padding-bottom: 50px;
+        padding: 0 0 50px;
     }
 
     .services__image {
-        flex: 0 0 40%;
-        margin: 0 0 24px 45px;
-    }
-
-    .services__description-text {
-        margin-top: 0;
+        flex: 0 0 35%;
+        text-align: left;
+        margin-left: 24px;
+        border-radius: 6px;
     }
 
     .services__image img {
-        border-radius: 6px;
         max-width: 100%;
+        height: auto;
+        border-radius: 6px;
     }
 
     .hidden {
@@ -281,21 +291,22 @@ body {
 
     .services__content {
         padding-left: 33px;
-        padding-right: 33px
+        padding-right: 33px;
     }
 
-    .header__icon-text {
-        margin-right: 10px;
-        font-size: 16px;
-        display: inline-block;
+    .services__description {
+        max-width: 60%;
     }
 
-    .header__icons .header__icon-text-li {
-        display: flex;
-        align-items: center;
+    .services__image {
+        flex: 0 0 35%;
+        margin-left: 33px;
+        border-radius: 6px;
     }
 
-    .services__menu {
-        display: block;
+    .services__image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 6px;
     }
 }
