@@ -17,9 +17,7 @@
         <button class="header__menu-toggle">
             <img src="images/SVG/burger.svg" alt="Menu">
         </button>
-        <div class="header__divider-1 hidden">
-            <img src="images/SVG/divider.svg" alt="" class="header__icon">
-        </div>
+        <div class="header__divider-1 hidden"></div>
         <div class="header__logo">
             <img src="images/SVG/logo.svg" alt="CPS_logo">
         </div>
@@ -27,24 +25,32 @@
     <nav class="header__nav">
         <ul class="header__icons">
             <li class="hidden">
-                <img src="images/SVG/call.svg" alt="Call" class="header__icon">
+                <button class="header__icon-button">
+                    <img src="images/SVG/call.svg" alt="Call" class="header__icon">
+                </button>
             </li>
             <li class="hidden">
-                <img src="images/SVG/chat.svg" alt="Chat" class="header__icon">
+                <button class="header__icon-button">
+                    <img src="images/SVG/chat.svg" alt="Chat" class="header__icon">
+                </button>
             </li>
             <li class="hidden">
-                <img src="images/SVG/profile.svg" alt="Profile" class="header__icon">
+                <button class="header__icon-button">
+                    <img src="images/SVG/profile.svg" alt="Profile" class="header__icon">
+                </button>
             </li>
-            <div class="header__divider-2">
-                <img src="images/SVG/divider.svg" alt="" class="header__icon">
-            </div>
+            <div class="header__divider-2"></div>
             <li class="header__icon-text-li">
                 <span class="header__icon-text">Оставить заявку</span>
-                <img src="images/SVG/repair.svg" alt="Repair" class="header__icon">
+                <button class="header__icon-button">
+                    <img src="images/SVG/repair.svg" alt="Repair" class="header__icon">
+                </button>
             </li>
             <li class="header__icon-text-li">
                 <span class="header__icon-text">Статус ремонта</span>
-                <img src="images/SVG/check-status.svg" alt="Check-status" class="header__icon">
+                <button class="header__icon-button">
+                    <img src="images/SVG/check-status.svg" alt="Check-status" class="header__icon">
+                </button>
             </li>
         </ul>
     </nav>
@@ -55,15 +61,34 @@
             <img src="images/SVG/highlight.svg" alt="Highlight">
             <h1 class="services__title-head">Услуги и сервисы</h1>
         </div>
-        <div class="services__menu-container">
+        <div class="services__menu-container"><!--этот див нужен чтобы в ксс написать ему position: relative;
+            иначе градиент справа распологается на всю страницу сверху вниз
+            если написать позишон в навигации то градиент останется на крайней кнорке справа и будет двигаться со всеми
+            хоть убейте не понимаю как это решить-->
             <nav class="services__menu">
-                <button class="services__menu-item">Ремонтируемые бренды</button>
-                <button class="services__menu-item">Ремонтируемые устройства</button>
-                <button class="services__menu-item">Дополнительные услуги</button>
-                <button class="services__menu-item">Адреса сервисных центров</button>
-                <button class="services__menu-item">Цены на услуги</button>
-                <button class="services__menu-item">Специальные цены</button>
-                <button class="services__menu-item">Отзывы</button>
+                <ul class="services__menu-item-list">
+                    <li>
+                        <a href="#" class="services__menu-item">Ремонтируемые бренды</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Ремонтируемые устройства</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Дополнительные услуги</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Адреса сервисных центров</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Цены на услуги</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Специальные цены</a>
+                    </li>
+                    <li>
+                        <a href="#" class="services__menu-item">Отзывы</a>
+                    </li>
+                </ul>
             </nav>
         </div>
         <div class="services__content">
@@ -87,7 +112,7 @@
                 </p>
                 <div class="services__link-column">
                     <img src="images/SVG/expand.svg" alt="Expand" class="services__link-image">
-                    <a href="#" class="services__link">Читать далее</a>
+                    <button class="services__link-button">Читать далее</button>
                 </div>
             </div>
             <div class="services__image">
