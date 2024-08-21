@@ -94,7 +94,7 @@ body {
     margin: 0;
 }
 
-.services__menu-container {
+.services__menu {
     position: relative;
 }
 
@@ -131,7 +131,7 @@ body {
     display: none;
 }
 
-.services__menu::after {
+.services__menu::before {
     content: '';
     position: absolute;
     top: 0;
