@@ -275,7 +275,7 @@ body {
 
     .header__logo {
         position: relative;
-        padding-left: 16px; /* 16px отступ + 2px ширина границы */
+        padding-left: 16px;
     }
 
     .header__logo::before {
