@@ -187,10 +187,17 @@ body {
     padding-right: 16px;
 }
 
-.services__link-column {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+.services__link-button {
+    display: flex; /* Используем flex для выравнивания иконки и текста */
+    align-items: center; /* Центрируем иконку и текст по вертикали */
+    gap: 8px; /* Отступ между иконкой и текстом */
+    background: none;
+    border: none;
+    color: #1B1C21;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
     padding: 0;
 }
 
@@ -208,28 +215,15 @@ body {
     font-weight: 500;
 }
 
-.services__link-button {
-    background: none;
-    border: none;
-    color: #1B1C21;
-    font-size: 16px;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    padding: 0;
-}
-
 .services__image {
-    max-width: 100%;
+    width: 100%;
     text-align: center;
     margin: 0;
     border-radius: 0;
 }
 
 .services__image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     border-radius: 0;
 }
