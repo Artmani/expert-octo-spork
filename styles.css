@@ -188,9 +188,9 @@ body {
 }
 
 .services__link-button {
-    display: flex; /* Используем flex для выравнивания иконки и текста */
-    align-items: center; /* Центрируем иконку и текст по вертикали */
-    gap: 8px; /* Отступ между иконкой и текстом */
+    display: flex;
+    align-items: center;
+    gap: 8px;
     background: none;
     border: none;
     color: #1B1C21;
