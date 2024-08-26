@@ -459,23 +459,6 @@ body {
     transition-duration: 250ms;
 }
 
-.menu__label-item {
-    display: block;
-    padding: 0;
-    color: #1B1C21;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: -0.20000000298023224px;
-    text-align: left;
-    text-decoration: none;
-    transition-duration: 250ms;
-}
-
-.menu__label-item:hover {
-    background-color: #FFFFFF;
-    border: 1px solid #B8FFEC;
-}
-
 .menu__header {
     max-height: 88px;
     padding: 19px 16px;
