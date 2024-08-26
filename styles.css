@@ -345,6 +345,7 @@ body {
         margin-left: auto;
         z-index: 1;
     }
+
     .services__title {
         position: relative;
         top: -60px;
@@ -433,4 +434,136 @@ body {
         display: block;
     }
 
+}
+
+
+/*menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu */
+#menu__toggle {
+    opacity: 0;
+    display: none;
+}
+
+.menu {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -320px;
+    width: 320px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    background-color: #FFFFFF;
+    box-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
+    transition-duration: 250ms;
+}
+
+.menu__label-item {
+    display: block;
+    padding: 0;
+    color: #1B1C21;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    text-decoration: none;
+    transition-duration: 250ms;
+}
+
+.menu__label-item:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #B8FFEC;
+}
+
+.menu__header {
+    max-height: 88px;
+    padding: 19px 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.menu__button-hidden {
+    visibility: hidden;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: #FF3E79;
+    border-radius: 20px;
+    left: 16px;
+    top: 24px;
+}
+
+.menu__button > .burger__button,
+.menu__button > .burger__button:before,
+.menu__button > .burger__button:after {
+    display: block;
+    position: absolute;
+
+    width: 18px;
+    height: 2px;
+    background-color: #FFFFFF;
+    border-radius: 1px;
+    transition-duration: 250ms;
+}
+
+.menu__button > .burger__button:before {
+    content: '';
+    top: -7px;
+    /*width: 18px;*/
+    border-radius: 1px;
+}
+
+.menu__button > .burger__button:after {
+    content: '';
+    top: 7px;
+    /*width: 14px;*/
+    border-radius: 1px;
+}
+
+#menu__toggle:checked ~ .menu__button > .burger__button {
+    transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .menu__button > .burger__button:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__button > .burger__button:before {
+    top: 0;
+    transform: rotate(0deg);
+}
+
+#menu__toggle:checked ~ .menu {
+    visibility: visible;
+    left: 0;
 }
