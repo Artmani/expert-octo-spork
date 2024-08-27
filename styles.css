@@ -644,3 +644,7 @@ body {
     position: absolute;
     bottom: 0;
 }
+
+.header__search:hover {
+    opacity: 0.7;
+}
