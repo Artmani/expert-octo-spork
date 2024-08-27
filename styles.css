@@ -272,7 +272,7 @@ body {
         padding-left: 16px;
     }
 
-    .header__logo::before {
+    .logo__before::before {
         content: "";
         position: absolute;
         left: 0;
