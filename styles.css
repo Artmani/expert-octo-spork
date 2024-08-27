@@ -453,7 +453,6 @@ body {
     margin: 0;
     padding: 0;
     list-style: none;
-    text-align: center;
     background-color: #FFFFFF;
     box-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
     transition-duration: 250ms;
@@ -461,7 +460,7 @@ body {
 
 .menu__header {
     max-height: 88px;
-    padding: 19px 16px;
+    padding: 19px 16px 46px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -548,4 +547,100 @@ body {
 #menu__toggle:checked ~ .menu {
     visibility: visible;
     left: 0;
+}
+
+.menu__label-list {
+    position: relative;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.menu__label-item {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.menu__label-link {
+    display: flex;
+    padding-left: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu__label-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 32px;
+    background-color: transparent;
+    border-radius: 0 6px 6px 0;
+    transition: background-color 0.3s;
+}
+
+.menu__label-link:hover::before,
+.menu__label-link:focus::before {
+    background-color: #41F6D7;
+}
+
+.menu__label-link:active,
+.menu__label-link:focus {
+    color: #7E7E82;
+}
+
+.menu-footer__label-list {
+    display: flex;
+    gap: 16px;
+    list-style: none;
+    padding: 16px 16px 16px 24px;
+    margin: 0;
+    align-items: center;
+}
+
+.menu__contacts {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 16px 16px 16px 24px;
+}
+
+.contacts__link {
+    flex-basis: 100%;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.phone {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu__lang-label-list {
+    display: flex;
+    gap: 7px;
+    list-style: none;
+    padding: 16px 24px 32px;
+    margin: 0;
+    align-items: center;
+}
+
+.menu__lang-label-link {
+    flex-basis: 100%;
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+.menu__lang-label-link.active,
+.menu__lang-label-link:focus,
+.menu__lang-label-link:active {
+    color: #7E7E82;
+}
+
+.menu-footer {
+    position: absolute;
+    bottom: 0;
 }

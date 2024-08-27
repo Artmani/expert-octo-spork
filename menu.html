@@ -14,6 +14,8 @@
 <label class="menu__button" for="menu__toggle">
     <span class="burger__button"></span>
 </label>
+
+
 <div class="menu">
     <div class="menu__header">
         <button class="menu__button-hidden">
@@ -26,7 +28,7 @@
             <img src="images/SVG/search.svg" alt="Search">
         </button>
     </div>
-    <nav>
+    <nav class="menu_nav">
         <ul class="menu__label-list">
             <li class="menu__label-item"><a class="menu__label-link" href="#">Ремонт техники</a></li>
             <li class="menu__label-item"><a class="menu__label-link" href="#">Услуги и сервисы</a></li>
@@ -38,6 +40,36 @@
             <li class="menu__label-item"><a class="menu__label-link" href="#">Контакты</a></li>
         </ul>
     </nav>
+    <div class="menu-footer">
+        <ul class="menu-footer__label-list">
+            <li class="menu-footer__label-item">
+                <button class="header__icon-button">
+                    <img class="header__icon" src="images/SVG/call.svg" alt="Call">
+                </button>
+            </li>
+            <li class="menu-footer__label-item">
+                <button class="header__icon-button">
+                    <img class="header__icon" src="images/SVG/chat.svg" alt="Chat">
+                </button>
+            </li>
+            <li class="menu-footer__label-item">
+                <button class="header__icon-button">
+                    <img class="header__icon" src="images/SVG/profile.svg" alt="Profile">
+                </button>
+            </li>
+        </ul>
+        <div class="menu__contacts">
+            <a class="contacts__link mail" href="mailto: mail@cps.com">mail@cps.com</a>
+            <a class="contacts__link phone" href="tel: 88008908900">8 800 890 8900</a>
+        </div>
+        <div class="menu__lang">
+            <ul class="menu__lang-label-list">
+                <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link active">RU</a></li>
+                <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link">EN</a></li>
+                <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link">CH</a></li>
+            </ul>
+        </div>
+    </div>
 </div>
 </body>
 </html>
