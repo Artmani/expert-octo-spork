@@ -499,7 +499,7 @@ body {
     z-index: 1;
     background-color: #FF3E79;
     border-radius: 20px;
-    left: 16px;
+    left: 24px;
     top: 24px;
 }
 
@@ -647,4 +647,7 @@ body {
 
 .header__search:hover {
     opacity: 0.7;
+}
+.menu__logo {
+    padding: 0;
 }
