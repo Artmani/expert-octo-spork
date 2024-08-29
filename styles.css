@@ -439,7 +439,7 @@ body {
 
 /*menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu menu */
 #menu__toggle {
-    opacity: 0;
+    display: none;
 }
 
 .menu {
