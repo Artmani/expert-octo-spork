@@ -462,7 +462,7 @@ body {
 
 .menu__header {
     max-height: 88px;
-    padding: 19px 16px 46px;
+    padding: 19px 24px 46px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
@@ -480,7 +480,6 @@ body {
 }
 
 .menu__button-hidden {
-    visibility: hidden;
     background: none;
     border: none;
     margin: 0;
@@ -498,52 +497,9 @@ body {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 1;
-    background-color: #FF3E79;
     border-radius: 20px;
     left: 24px;
     top: 24px;
-}
-
-.menu__button > .burger__button,
-.menu__button > .burger__button:before,
-.menu__button > .burger__button:after {
-    display: block;
-    position: absolute;
-
-    width: 18px;
-    height: 2px;
-    background-color: #FFFFFF;
-    border-radius: 1px;
-    transition-duration: 250ms;
-}
-
-.menu__button > .burger__button:before {
-    content: '';
-    top: -7px;
-    /*width: 18px;*/
-    border-radius: 1px;
-}
-
-.menu__button > .burger__button:after {
-    content: '';
-    top: 7px;
-    /*width: 14px;*/
-    border-radius: 1px;
-}
-
-#menu__toggle:checked ~ .menu__button > .burger__button {
-    transform: rotate(45deg);
-}
-
-#menu__toggle:checked ~ .menu__button > .burger__button:after {
-    top: 0;
-    transform: rotate(90deg);
-}
-
-#menu__toggle:checked ~ .menu__button > .burger__button:before {
-    top: 0;
-    transform: rotate(0deg);
 }
 
 #menu__toggle:checked ~ .menu {
