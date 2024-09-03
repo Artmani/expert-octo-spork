@@ -9,3 +9,13 @@ menuOpenButton.addEventListener('click', function() {
 menuCloseButton.addEventListener('click', function() {
     menu.style.transform = 'translateX(-100%)';
 });
+
+document.addEventListener('click', function(event) {
+    const target = event.target;
+    const isClickInsideMenu = menu.contains(target);
+    const isClickOnMenuButton = menuOpenButton.contains(target);
+
+    if (!isClickInsideMenu && !isClickOnMenuButton) {
+        menu.style.transform = 'translateX(-100%)';
+    }
+});
