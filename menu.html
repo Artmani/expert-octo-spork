@@ -1,75 +1,84 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu</title>
+    <title>Меню</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 <body>
-<input type="checkbox" id="menu__toggle">
-<label class="menu__button" for="menu__toggle">
-    <img class="burger__button" src="images/SVG/burger.svg" alt="Menu">
-</label>
-<div class="menu">
-    <div class="menu__header">
-        <label class="menu__button-hidden" for="menu__toggle">
+
+<!-- Кнопка открытия меню -->
+<button class="menu__button" aria-label="Toggle menu" id="menu-open">
+    <img class="menu__button-icon" src="images/SVG/burger.svg" alt="Menu">
+</button>
+
+<div class="menu" id="menu">
+    <header class="menu__header">
+        <!-- Кнопка закрытия меню -->
+        <button class="menu__button-close" aria-label="Close menu" id="menu-close">
             <img src="images/SVG/burger.svg" alt="Menu">
-        </label>
-        <a class="header__logo menu__logo" href="#">
+        </button>
+        <a class="menu__logo" href="#">
             <img src="images/SVG/logo.svg" alt="CPS_logo">
         </a>
-        <button class="header__search">
+        <button class="menu__search" aria-label="Search">
             <img src="images/SVG/search.svg" alt="Search">
         </button>
-    </div>
-    <div class="menu__flex-separator">
-        <nav class="menu__nav">
-            <ul class="menu__label-list">
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Ремонт техники</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Услуги и сервисы</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Корпоративным клиентам</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Продавцам техники</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Партнерам</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Производителям</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Наши сервисные центры</a></li>
-                <li class="menu__label-item"><a class="menu__label-link" href="#">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="menu-footer">
-            <ul class="menu-footer__label-list">
-                <li class="menu-footer__label-item">
-                    <button class="header__icon-button">
-                        <img class="header__icon" src="images/SVG/call.svg" alt="Call">
-                    </button>
-                </li>
-                <li class="menu-footer__label-item">
-                    <button class="header__icon-button">
-                        <img class="header__icon" src="images/SVG/chat.svg" alt="Chat">
-                    </button>
-                </li>
-                <li class="menu-footer__label-item">
-                    <button class="header__icon-button">
-                        <img class="header__icon" src="images/SVG/profile.svg" alt="Profile">
-                    </button>
-                </li>
-            </ul>
-            <div class="menu__contacts">
-                <a class="contacts__link mail" href="mailto: mail@cps.com">mail@cps.com</a>
-                <a class="contacts__link phone" href="tel: 88008908900">8 800 890 8900</a>
-            </div>
-            <div class="menu__lang">
-                <ul class="menu__lang-label-list">
-                    <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link active">RU</a></li>
-                    <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link">EN</a></li>
-                    <li class="menu__lang-label-item"><a href="#" class="menu__lang-label-link">CH</a></li>
-                </ul>
-            </div>
+    </header>
+    <nav class="menu__nav">
+        <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">Ремонт техники</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Услуги и сервисы</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Корпоративным клиентам</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Продавцам техники</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Партнерам</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Производителям</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Наши сервисные центры</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+    </nav>
+    <footer class="menu__footer">
+        <div class="menu__icons">
+            <button class="menu__icon" aria-label="Call">
+                <img src="images/SVG/call.svg" alt="Call">
+            </button>
+            <button class="menu__icon" aria-label="Chat">
+                <img src="images/SVG/chat.svg" alt="Chat">
+            </button>
+            <button class="menu__icon" aria-label="Profile">
+                <img src="images/SVG/profile.svg" alt="Profile">
+            </button>
         </div>
-    </div>
+        <address class="menu__contacts">
+            <a class="menu__contact-link menu__contact-link--email" href="mailto: mail@cps.com">mail@cps.com</a>
+            <a class="menu__contact-link menu__contact-link--phone" href="tel: 88008908900">8 800 890 8900</a>
+        </address>
+        <ul class="lang-switcher">
+            <li class="lang-switcher__item"><a href="#" class="lang-switcher__link lang-switcher__link--active">RU</a>
+            </li>
+            <li class="lang-switcher__item"><a href="#" class="lang-switcher__link">EN</a></li>
+            <li class="lang-switcher__item"><a href="#" class="lang-switcher__link">CH</a></li>
+        </ul>
+    </footer>
 </div>
+
+<script>
+    const menu = document.getElementById('menu');
+    const menuOpenButton = document.getElementById('menu-open');
+    const menuCloseButton = document.getElementById('menu-close');
+
+    menuOpenButton.addEventListener('click', () => {
+        menu.style.transform = 'translateX(0)';
+    });
+
+    menuCloseButton.addEventListener('click', () => {
+        menu.style.transform = 'translateX(-100%)';
+    });
+</script>
+
 </body>
 </html>
