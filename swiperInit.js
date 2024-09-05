@@ -20,7 +20,6 @@ if (window.innerWidth > 767) {
         const slides = document.querySelectorAll('.swiper-slide');
         let isExpanded = false;
 
-        // Скрываем лишние слайды по умолчанию (например, оставляем первые 4)
         const toggleSlides = (showAll) => {
             slides.forEach((slide, index) => {
                 if (index >= 4) {
