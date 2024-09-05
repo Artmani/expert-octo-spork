@@ -102,22 +102,21 @@ body {
         margin: 0;
     }
 
-    /* Отключаем Swiper */
     .swiper-wrapper {
         display: flex;
-        flex-wrap: wrap; /* Элементы идут по порядку с переносом */
-        gap: 16px; /* Отступ между элементами */
+        flex-wrap: wrap;
+        gap: 16px;
         padding: 24px 8px 24px 24px;
     }
 
-    /* Стиль для элементов */
+
     .swiper-slide {
         width: calc(33.33% - 16px);
-        box-sizing: border-box; /* Чтобы padding и border не увеличивали ширину элемента */
+        box-sizing: border-box;
     }
 
     .swiper-pagination {
-        display: none; /* Убираем пагинацию */
+        display: none;
     }
 
     .swiper-gradient:before {
@@ -142,11 +141,11 @@ body {
         width: 24px;
         height: 24px;
         display: block;
-        transition: transform 0.3s ease; /* Для анимации поворота */
+        transition: transform 0.3s ease;
     }
 
     .services__link-button.expanded .services__link-image {
-        transform: rotate(180deg); /* Поворот стрелки при раскрытии */
+        transform: rotate(180deg);
     }
 }
 
@@ -157,7 +156,7 @@ body {
     }
 
     .swiper-slide {
-        flex: 1 1 calc(25% - 16px); /* 4 колонки */
+        flex: 1 1 calc(25% - 16px);
         max-width: calc(25% - 16px);
     }
 
@@ -179,15 +178,15 @@ body {
         width: 24px;
         height: 24px;
         display: block;
-        transition: transform 0.3s ease; /* Для анимации поворота */
+        transition: transform 0.3s ease;
     }
 
     .services__link-button.expanded .services__link-image {
-        transform: rotate(180deg); /* Поворот стрелки при раскрытии */
+        transform: rotate(180deg);
     }
 
     .swiper-pagination {
-        display: none; /* Убираем пагинацию */
+        display: none;
     }
 
     .swiper-gradient:before {

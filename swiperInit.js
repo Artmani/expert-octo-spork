@@ -16,7 +16,7 @@ if (window.innerWidth > 767) {
 
     document.addEventListener("DOMContentLoaded", function () {
         const toggleButton = document.querySelector('.services__link-button');
-        const toggleButtonText = toggleButton.querySelector('.services__link-text'); // Выбираем только span с классом
+        const toggleButtonText = toggleButton.querySelector('.services__link-text');
         const slides = document.querySelectorAll('.swiper-slide');
         let isExpanded = false;
 
@@ -24,21 +24,19 @@ if (window.innerWidth > 767) {
         const toggleSlides = (showAll) => {
             slides.forEach((slide, index) => {
                 if (index >= 4) {
-                    slide.style.display = showAll ? 'flex' : 'none'; // Показать все или скрыть лишние
+                    slide.style.display = showAll ? 'flex' : 'none';
                 }
             });
         };
 
-        // Изначально скрываем лишние элементы
         toggleSlides(isExpanded);
 
-        // Обработчик клика на кнопку
         toggleButton.addEventListener('click', function () {
             isExpanded = !isExpanded;
             toggleSlides(isExpanded);
-            toggleButtonText.innerText = isExpanded ? 'Скрыть' : 'Показать все'; // Меняем только текст внутри span с классом
-            toggleButton.classList.toggle('expanded', isExpanded); // Меняем класс для поворота стрелки
+            toggleButtonText.innerText = isExpanded ? 'Скрыть' : 'Показать все';
+            toggleButton.classList.toggle('expanded', isExpanded);
         });
     });
-    
+
 }
