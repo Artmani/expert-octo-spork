@@ -40,10 +40,10 @@
     </nav>
     <footer class="menu__footer">
         <div class="menu__icons">
-            <button class="menu__icon" aria-label="Call">
+            <button class="menu__icon header__modal1-toggle" aria-label="Call" id="modal2-open">
                 <img src="../images/call.svg" alt="Call">
             </button>
-            <button class="menu__icon" aria-label="Chat">
+            <button class="menu__icon header__modal1-toggle" aria-label="Toggle modal1" id="modal1-open">
                 <img src="../images/chat.svg" alt="Chat">
             </button>
             <button class="menu__icon" aria-label="Profile">
@@ -62,6 +62,71 @@
         </ul>
     </footer>
 </div>
+
+
+<div class="overlay-modal1" id="overlay-modal1"></div>
+<div class="modal1" id="modal1">
+    <button class="feedback-form__close-btn" aria-label="Close modal1" id="modal1-close">
+        <img class="feedback-form__close-img" src="../images/cross.svg" alt="modal1">
+    </button>
+    <h2 class="feedback-form__title">Обратная связь</h2>
+    <form class="feedback-form__form" action="#">
+        <label for="name"></label>
+        <input id="name" class="feedback-form__input feedback-form__input--type--name" type="text" name="name"
+               placeholder="Имя*" required>
+
+        <label for="phone"></label>
+        <input id="phone" class="feedback-form__input feedback-form__input--type--phone" type="tel" name="phone"
+               placeholder="Телефон*" required>
+
+        <label for="email"></label>
+        <input id="email" class="feedback-form__input feedback-form__input--type--email" type="email" name="email"
+               placeholder="Электронная почта*" required>
+
+        <label for="message"></label>
+        <textarea id="message" class="feedback-form__textarea feedback-form__textarea--type--message" name="message"
+                  placeholder="Сообщение*" required></textarea>
+
+        <p class="feedback-form__policy">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="feedback-form__policy-link" href="#" target="_blank">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a class="feedback-form__policy-link" href="#" target="_blank">политикой
+                конфиденциальности</a>.
+        </p>
+
+        <button class="feedback-form__submit-btn" type="submit">
+            <img class="feedback-form__submit-img" src="../images/send.svg" alt="modal1">
+        </button>
+    </form>
+</div>
+
+
+<div class="overlay-modal1" id="overlay-modal2"></div>
+<div class="modal1" id="modal2">
+    <button class="feedback-form__close-btn" id="modal2-close">
+        <img class="feedback-form__close-img" src="../images/cross.svg" alt="modal2">
+    </button>
+    <h2 class="feedback-form__title">Заказать звонок</h2>
+    <form class="feedback-form__form" action="#">
+        <label for="tel"></label>
+        <input id="tel" class="feedback-form__input feedback-form__input--type--name" type="text" name="name"
+               placeholder="Телефон*" required>
+        <p class="feedback-form__policy">
+            Нажимая “отправить”, вы даете согласие на
+            <a class="feedback-form__policy-link" href="#" target="_blank">обработку персональных данных</a>
+            и соглашаетесь с нашей
+            <a class="feedback-form__policy-link" href="#" target="_blank">политикой
+                конфиденциальности</a>.
+        </p>
+
+        <button class="feedback-form__submit-btn" type="submit">
+            <img class="feedback-form__submit-img" src="../images/send.svg" alt="modal1">
+        </button>
+    </form>
+</div>
+
+
 <header class="header">
     <div class="header__left">
         <!-- Кнопка открытия меню -->
@@ -75,12 +140,12 @@
     <nav class="header__nav">
         <ul class="header__icons-service">
             <li class="hidden">
-                <button class="header__icon-button">
+                <button class="header__icon-button" id="call-form">
                     <img class="header__icon" src="../images/call.svg" alt="Call">
                 </button>
             </li>
             <li class="hidden">
-                <button class="header__icon-button">
+                <button class="header__icon-button" id="feedback-form">
                     <img class="header__icon" src="../images/chat.svg" alt="Chat">
                 </button>
             </li>
