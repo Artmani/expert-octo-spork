@@ -145,7 +145,7 @@ body {
     scrollbar-width: none;
     gap: 16px;
     padding-right: 16px;
-    padding-left: 16px;
+    padding-left: 24px;
     list-style-type: none;
     margin: 0;
 }
@@ -224,7 +224,13 @@ body {
 .servives__dscription-text-2-2 {
     display: none;
 }
-
+.services__title {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding: 24px 0 24px 24px;
+    position: relative;
+}
 .services__title-header {
     display: none;
 }
@@ -611,7 +617,7 @@ address {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        padding-left: 16px;
+        padding-left: 24px;
         padding-right: 16px;
     }
 
@@ -672,7 +678,7 @@ address {
 
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1440px) {
     .header {
         padding: 42px 29px 8px 0;
         border-bottom: none;
@@ -692,6 +698,7 @@ address {
         z-index: 2;
         pointer-events: none;
         margin-bottom: -60px;
+        padding-left: 34px;
     }
 
     .services__title-head {
@@ -699,7 +706,6 @@ address {
         flex-direction: row;
         gap: 29px;
         position: relative;
-        padding-left: 30px;
     }
 
     .header__left {
@@ -728,8 +734,8 @@ address {
 
 
     .services__menu {
-        padding-right: 29px;
-        padding-left: 29px;
+        padding-right: 24px;
+        padding-left: 34px;
     }
 
     .services__menu-item-list {
@@ -738,8 +744,8 @@ address {
     }
 
     .services__content {
-        padding-left: 33px;
-        padding-right: 33px;
+        padding-left: 34px;
+        padding-right: 34px;
     }
 
     .services__description {
@@ -780,6 +786,7 @@ address {
 
     .header {
         margin-left: 320px;
+        padding-right: 32px;
     }
 
     .menu__button-close {

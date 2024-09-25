@@ -262,13 +262,14 @@ body {
     .swiper__title {
         margin: 46px 0 0;
         width: 100%;
+        padding-left: 24px;
     }
 
     .swiper-wrapper {
         display: flex;
         flex-wrap: wrap;
-        gap: 16px;
-        padding: 24px 8px 24px 24px;
+        gap: 16px 24px;
+        margin: 24px;
     }
 
 
@@ -317,6 +318,7 @@ body {
         width: 768px;
         margin-left: auto;
         margin-right: auto;
+        padding-top: 8px;
     }
 
     .service-card__title,
@@ -333,7 +335,7 @@ body {
 
     .price-service {
         display: block;
-        padding-top: 0;
+        margin-top: 0;
     }
 
     .service-card {
@@ -399,6 +401,7 @@ body {
     .after-swiper__description-text {
         width: 65%;
         margin-left: 0;
+        margin-top: 0;
     }
 
     .after-swiper__link-button {
@@ -454,17 +457,23 @@ body {
 
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1440px) {
     .swiper {
         width: 1120px;
         height: auto;
     }
-
-    .swiper-slide {
-        flex: 1 1 calc(25% - 16px);
-        max-width: calc(25% - 16px);
+    .swiper-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 32px;
+        margin: 24px 32px 24px 32px;
     }
-
+    .swiper-slide {
+        width: 240px;
+    }
+    .swiper__title {
+        padding-left: 34px;
+    }
     .swiper__link-button {
         display: flex;
         align-items: center;
@@ -478,7 +487,9 @@ body {
         cursor: pointer;
         padding-left: 24px;
     }
-
+    .after-swiper__description {
+        margin: 0 34px;
+    }
     .swiper__link-image {
         width: 24px;
         height: 24px;
@@ -500,8 +511,8 @@ body {
 
     .price-table__header {
         display: grid;
-        grid-template-columns: 526px 227px 192px auto;
-        width: 1120px;
+        grid-template-columns: 470px 227px 192px auto;
+        width: 1056px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -557,11 +568,15 @@ body {
         border-bottom-right-radius: 6px;
     }
 
-    .swiper-wrapper {
-        padding-left: 32px;
-    }
-
     .price-service {
         padding-right: 0;
+        gap: 0;
+        margin-top: 0;
+    }
+    .text-footer__all {
+        padding: 16px 34px;
+    }
+    .header__title {
+        padding-left: 16px;
     }
 }

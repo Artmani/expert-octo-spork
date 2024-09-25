@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const toggleSlides1 = (showAll) => {
             slides1.forEach((slide, index) => {
-                if (index >= 3) {
+                if (index >= 5) {
                     slide.style.display = showAll ? 'flex' : 'none';
                 }
             });
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const toggleSlides2 = (showAll) => {
             slides2.forEach((slide, index) => {
-                if (index >= 3) {
+                if (index >= 5) {
                     slide.style.display = showAll ? 'flex' : 'none';
                 }
             });
