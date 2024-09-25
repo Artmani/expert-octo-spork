@@ -143,7 +143,7 @@ body {
     overflow-x: auto;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    gap: 16px;
+    gap: 10px;
     padding-right: 16px;
     padding-left: 24px;
     list-style-type: none;
@@ -224,6 +224,7 @@ body {
 .servives__dscription-text-2-2 {
     display: none;
 }
+
 .services__title {
     display: flex;
     flex-direction: row;
@@ -231,6 +232,7 @@ body {
     padding: 24px 0 24px 24px;
     position: relative;
 }
+
 .services__title-header {
     display: none;
 }
@@ -619,6 +621,9 @@ address {
         justify-content: space-between;
         padding-left: 24px;
         padding-right: 16px;
+        width: 720px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .services__description {
@@ -746,6 +751,9 @@ address {
     .services__content {
         padding-left: 34px;
         padding-right: 34px;
+        width: 1056px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .services__description {
@@ -771,6 +779,9 @@ address {
 
     .services__menu {
         display: block;
+        width: 1056px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 
