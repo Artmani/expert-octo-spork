@@ -1,0 +1,262 @@
+.main-content {
+  background-color: $background-color-main;
+}
+
+.services {
+  text-align: left;
+}
+
+.services__title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 24px 0 24px 16px;
+  position: relative;
+}
+
+.services__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 40px;
+  background-color: $border-highlight-color;
+}
+
+.services__title-head {
+  font-size: 28px;
+  margin: 0;
+}
+
+.services__menu {
+  position: relative;
+}
+
+.services__menu:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  pointer-events: none;
+  background: linear-gradient(to right, $background-linear-gradient1 0%, $background-linear-gradient0 100%);
+  z-index: 1;
+}
+
+.services__menu-item-list {
+  display: flex;
+  overflow-x: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  gap: 10px;
+  padding-right: 16px;
+  padding-left: 24px;
+  list-style-type: none;
+  margin: 0;
+}
+
+.services__menu-item {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: $text-block-color;
+  font-size: 16px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  margin: 0;
+}
+
+.services__menu::-webkit-scrollbar {
+  display: none;
+}
+
+.services__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 24px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.services__description {
+  max-width: 100%;
+  margin-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.services__link-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: $text-menu-color;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.services__link-image {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.services__link {
+  display: block;
+  color: $text-menu-color;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.services__image {
+  width: 100%;
+  border-radius: 0;
+  margin: 0 0 24px;
+}
+
+.servives__dscription-text-2-2 {
+  display: none;
+}
+
+.services__title {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  padding: 24px 0 24px 24px;
+  position: relative;
+}
+
+.services__title-header {
+  display: none;
+}
+.services__menu-item:hover {
+  background-color: $background-color-head;
+  border: 1px solid $border-highlight-color;
+}
+
+.services__link:hover {
+  text-decoration: underline;
+}
+
+.services__link-button:hover {
+  text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+  .services__content {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-right: 16px;
+    width: 720px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .services__description {
+    flex: 1;
+    max-width: 60%;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .services__link-column {
+    padding: 0 0 50px;
+  }
+
+  .services__image {
+    max-width: 360px;
+    max-height: 208px;
+    margin-left: 24px;
+    border-radius: 6px;
+  }
+  .servives__dscription-text-2-2 {
+    display: none;
+  }
+
+  .services__title-header {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .main-content {
+    margin-left: 320px;
+  }
+  .services__title {
+    position: relative;
+    top: -60px;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+    margin-bottom: -60px;
+    padding-left: 34px;
+  }
+
+  .services__title-head {
+    display: flex;
+    flex-direction: row;
+    gap: 29px;
+    position: relative;
+  }
+  .services__description-text-2 {
+    display: none;
+  }
+
+  .servives__dscription-text-2-2 {
+    display: block;
+  }
+  .services__menu {
+    padding-right: 24px;
+    padding-left: 34px;
+  }
+
+  .services__menu-item-list {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .services__content {
+    padding-left: 34px;
+    padding-right: 34px;
+    width: 1056px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .services__description {
+    max-width: 60%;
+  }
+
+  .services__image {
+    margin-left: 33px;
+    max-width: 531px;
+    max-height: 307px;
+  }
+
+  .services__menu {
+    display: block;
+    width: 1056px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
